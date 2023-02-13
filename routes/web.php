@@ -24,7 +24,7 @@ Route::get('/canciones/{id?}',function($id=null){
     $canciones[] = ['nombre' => 'Dont Wanna Know', 'artista'=>'Maroon5'];
     //dd($canciones);
 
-    if(is_null($id)){
+    if(!is_null($id)){
         $cancion=$canciones[$id];
     } else{
         $cancion=null;
